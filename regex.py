@@ -34,6 +34,5 @@ class RegexClass:
         print('Phone Number Found ::', phone_no)
         print('Email Found ::', email_address)
 
-
-
-RegexClass()
+if __name__ == "__main__":
+    RegexClass()
