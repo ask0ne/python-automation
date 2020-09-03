@@ -3,24 +3,21 @@ Regular Expressions for validation and matching
 '''
 import re
 
-
 class RegexClass:
-    '''Class'''
+    '''Main class'''
     def __init__(self):
         input_text = self.enter_input()
         self.find_patterns(input_text)
 
     def is_phone(self, example):
-        '''Check if given string contains phone number'''
+        '''Contains phone number'''
         phone_regex = re.compile(r'\d{10}')
         return phone_regex.findall(example)
 
-
     def is_email(self, example):
-        '''Email'''
+        '''Contains Email'''
         email_regex = re.compile(r''' [a-zA-Z0-9.+]+@[a-zA-Z0-9.-]+\.[a-zA-Z]+ ''', re.VERBOSE)
         return email_regex.findall(example)
-
 
     def enter_input(self):
         '''Input'''
